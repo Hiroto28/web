@@ -22,27 +22,4 @@ const imgObserver = new IntersectionObserver(showImg);
 imgObserver.observe(mainImg);
 //--------------------------------------------------------
 
-//---------------cooking画像を監視対象にする----------------
-const cookingImages = document.querySelectorAll('.section img');
-//　動作内容を定義
-
-for (let i = 0; i < cookingImages.length; i++) {
-    console.log(cookingImages);
-    const keyframes2 = {
-        //不透明度
-        opacity: [0, 1],
-    };
-    const options2 = {
-        //再生時間
-        duration: 600,
-        //遅延
-        delay: i * 300,
-        //ゆっくりと
-        easing: 'ease',
-        //再生後の状態を保つ
-        fill: 'forwards',
-    };
-    cookingImages[i].animate(keyframes2, options2);
-}
-
 

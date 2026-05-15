@@ -476,7 +476,8 @@ p {
 
     #mainText2 {
         font-size: 196px;
-        text-align: right;
+        justify-content: right;
+        margin: 500px 0 0 50px;
     }
 
     #infomation {
